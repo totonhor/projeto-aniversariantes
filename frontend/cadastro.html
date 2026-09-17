@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Cadastrar pessoa</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="topo">
+
+        <h1>Painel de Aniversariantes</h1>
+
+        <nav>
+
+            <a href="hoje.html">
+                Hoje
+            </a>
+
+            <a href="calendario.html">
+                Calendário
+            </a>
+
+            <a href="cadastro.html">
+                Cadastrar
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="cabecalho-pagina">
+
+            <h2>Cadastrar pessoa</h2>
+
+            <p>
+                Adicione uma nova pessoa ao painel.
+            </p>
+
+        </section>
+
+
+        <form id="formCadastro">
+
+            <label for="nome">
+                Nome
+            </label>
+
+            <input
+                type="text"
+                id="nome"
+                placeholder="Digite o nome"
+                required
+            >
+
+
+            <label for="dataAniversario">
+                Data de nascimento
+            </label>
+
+            <input
+                type="date"
+                id="dataAniversario"
+                required
+            >
+
+
+            <button type="submit">
+                Cadastrar
+            </button>
+
+        </form>
+
+
+        <p
+            id="mensagemErro"
+            class="mensagem-erro"
+            hidden
+        ></p>
+
+        <p
+            id="mensagemSucesso"
+            class="mensagem-sucesso"
+            hidden
+        ></p>
+
+    </main>
+
+
+    <script src="js/api.js"></script>
+    <script src="js/cadastro.js"></script>
+
+</body>
+
+</html>
