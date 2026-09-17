@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Calendário de aniversariantes</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="topo">
+
+        <h1>Painel de Aniversariantes</h1>
+
+        <nav>
+
+            <a href="hoje.html">
+                Hoje
+            </a>
+
+            <a href="calendario.html">
+                Calendário
+            </a>
+
+            <a href="cadastro.html">
+                Cadastrar
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="cabecalho-pagina">
+
+            <h2>Calendário</h2>
+
+            <p>
+                Consulte os aniversariantes de cada mês.
+            </p>
+
+        </section>
+
+
+        <section class="controles-calendario">
+
+            <button id="mesAnterior">
+                ←
+            </button>
+
+            <h2 id="nomeMes">
+                Janeiro
+            </h2>
+
+            <button id="mesProximo">
+                →
+            </button>
+
+        </section>
+
+
+        <section class="calendario">
+
+            <div class="dias-semana">
+
+                <div>Dom</div>
+                <div>Seg</div>
+                <div>Ter</div>
+                <div>Qua</div>
+                <div>Qui</div>
+                <div>Sex</div>
+                <div>Sáb</div>
+
+            </div>
+
+
+            <div
+                id="diasCalendario"
+                class="dias-calendario"
+            ></div>
+
+        </section>
+
+
+        <section class="lista-mes">
+
+            <h2>Aniversariantes do mês</h2>
+
+            <div id="listaAniversariantes">
+
+                <p class="carregando">
+                    Carregando...
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="pesquisa">
+
+            <h2>Pesquisar pessoa</h2>
+
+            <form id="formPesquisa">
+
+                <input
+                    type="text"
+                    id="termoPesquisa"
+                    placeholder="Digite o nome"
+                    required
+                >
+
+                <button type="submit">
+                    Pesquisar
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <p
+            id="mensagemErro"
+            class="mensagem-erro"
+            hidden
+        ></p>
+
+    </main>
+
+
+    <script src="js/api.js"></script>
+    <script src="js/calendario.js"></script>
+
+</body>
+
+</html>
